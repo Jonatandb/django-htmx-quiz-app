@@ -1,3 +1,46 @@
+# Cuestionario solicitado a Claude IA ()
+# Prompt utilizado:
+#   Estoy creando una aplicación de prueba con preguntas y respuestas. Aquí hay una muestra de datos en formato YAML (el resultado debe comenzar con pk 1).
+#   Escribe un cuestionario sobre programación en general (no sobre un lenguaje específico), que entiendan todos los programadores, que tenga al menos 10 encuestas con al menos 5 preguntas cada una y no menos de 3 opciones en cada pregunta.
+#   La respuesta correcta no debe ser siempre la primera opción, tiene que aparecer en un orden aleatorio en cada conjunto de opciones.
+#   Es MUY imporatnte que utilice el mismo formato yaml provisto y devuelva el resultado formateado en un yaml válido.
+#   Evite preguntas que solo verifiquen el nombre de algo.
+#   Quiero preguntas para evaluar la comprensión, no la memorización.
+#   Quiero que tanto preguntas como respuestas estén en español.
+#   ---
+#   - model: quiz.quiz
+#   pk: 1
+#   fields:
+#   name: Fundamental laws
+#   - model: quiz.question
+#   pk: 1
+#   fields:
+#   quiz: 1
+#   text: What does Newton's First Law of Motion state?
+#   - model: quiz.answer
+#   pk: 1
+#   fields:
+#   question: 1
+#   text: Every object in motion will change its velocity unless acted upon by an external force
+#   is_correct: false
+#   - model: quiz.answer
+#   pk: 2
+#   fields:
+#   question: 1
+#   text: For every action, there is an equal and opposite reaction
+#   is_correct: false
+#   - model: quiz.answer
+#   pk: 3
+#   fields:
+#   question: 1
+#   text: The force acting on an object is equal to the mass of that object times its acceleration
+#   is_correct: false
+#   - model: quiz.answer
+#   pk: 4
+#   fields:
+#   question: 1
+#   text: An object at rest stays at rest, and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force
+#   is_correct: true
 ---
 - model: quiz.quiz
   pk: 1
