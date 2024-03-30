@@ -35,3 +35,4 @@
 
 - To load extra data, create a new yaml file following quiz_data.yaml format and execute:
   - python manage.py loaddata quiz_data.yaml
+    - New quiz data must have different/consecutive pk's for quiz, question, answer to avoid conflict with existing ones.
