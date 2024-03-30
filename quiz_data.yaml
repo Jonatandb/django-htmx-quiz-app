@@ -1,0 +1,590 @@
+---
+- model: quiz.quiz
+  pk: 1
+  fields:
+    name: Conceptos de programación
+
+- model: quiz.question
+  pk: 1
+  fields:
+    quiz: 1
+    text: ¿Cuál es el propósito principal de la abstracción en la programación?
+
+- model: quiz.answer
+  pk: 1
+  fields:
+    question: 1
+    text: Simplificar la complejidad al ocultar detalles innecesarios y exponer solo la información esencial.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 2
+  fields:
+    question: 1
+    text: Hacer que el código sea más complejo de entender.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 3
+  fields:
+    question: 1
+    text: Aumentar el tamaño del código fuente.
+    is_correct: false
+
+- model: quiz.question
+  pk: 2
+  fields:
+    quiz: 1
+    text: ¿Qué es el polimorfismo en la programación orientada a objetos?
+
+- model: quiz.answer
+  pk: 4
+  fields:
+    question: 2
+    text: La capacidad de un objeto para tomar diferentes formas.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 5
+  fields:
+    question: 2
+    text: La capacidad de un objeto para realizar una tarea de diferentes maneras.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 6
+  fields:
+    question: 2
+    text: La capacidad de objetos de diferentes clases para responder al mismo mensaje o método de manera diferente.
+    is_correct: true
+
+- model: quiz.quiz
+  pk: 2
+  fields:
+    name: Algoritmos y estructuras de datos
+
+- model: quiz.question
+  pk: 3
+  fields:
+    quiz: 2
+    text: ¿Cuál es la complejidad temporal promedio de la operación de búsqueda en una lista enlazada?
+
+- model: quiz.answer
+  pk: 7
+  fields:
+    question: 3
+    text: O(1)
+    is_correct: false
+
+- model: quiz.answer
+  pk: 8
+  fields:
+    question: 3
+    text: O(n)
+    is_correct: true
+
+- model: quiz.answer
+  pk: 9
+  fields:
+    question: 3
+    text: O(log n)
+    is_correct: false
+
+- model: quiz.question
+  pk: 4
+  fields:
+    quiz: 2
+    text: ¿Cuál es la principal ventaja de utilizar una estructura de datos de árbol?
+
+- model: quiz.answer
+  pk: 10
+  fields:
+    question: 4
+    text: Permite el acceso aleatorio a los elementos.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 11
+  fields:
+    question: 4
+    text: Proporciona una estructura jerárquica para organizar los datos.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 12
+  fields:
+    question: 4
+    text: Facilita la inserción y eliminación de elementos en cualquier posición.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 3
+  fields:
+    name: Patrones de diseño
+
+- model: quiz.question
+  pk: 5
+  fields:
+    quiz: 3
+    text: ¿Cuál es el propósito del patrón de diseño Singleton?
+
+- model: quiz.answer
+  pk: 13
+  fields:
+    question: 5
+    text: Garantizar que una clase tenga una única instancia y proporcionar un punto de acceso global a ella.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 14
+  fields:
+    question: 5
+    text: Facilitar la creación de múltiples instancias de una clase.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 15
+  fields:
+    question: 5
+    text: Mejorar el rendimiento de una aplicación.
+    is_correct: false
+
+- model: quiz.question
+  pk: 6
+  fields:
+    quiz: 3
+    text: ¿Cuál es el propósito del patrón de diseño Observador?
+
+- model: quiz.answer
+  pk: 16
+  fields:
+    question: 6
+    text: Definir una relación uno-a-uno entre objetos.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 17
+  fields:
+    question: 6
+    text: Definir una relación uno-a-muchos entre objetos para notificar cambios en el estado de un objeto a otros objetos interesados.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 18
+  fields:
+    question: 6
+    text: Facilitar la creación de objetos complejos.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 4
+  fields:
+    name: Programación funcional
+
+- model: quiz.question
+  pk: 7
+  fields:
+    quiz: 4
+    text: ¿Cuál es la principal diferencia entre la programación funcional y la programación imperativa?
+
+- model: quiz.answer
+  pk: 19
+  fields:
+    question: 7
+    text: La programación funcional se enfoca en definir funciones puras que no tienen efectos secundarios.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 20
+  fields:
+    question: 7
+    text: La programación funcional es más rápida que la programación imperativa.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 21
+  fields:
+    question: 7
+    text: La programación funcional es más fácil de aprender que la programación imperativa.
+    is_correct: false
+
+- model: quiz.question
+  pk: 8
+  fields:
+    quiz: 4
+    text: ¿Qué es el map en la programación funcional?
+
+- model: quiz.answer
+  pk: 22
+  fields:
+    question: 8
+    text: Una función que aplica una operación a cada elemento de una colección y devuelve una nueva colección con los resultados.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 23
+  fields:
+    question: 8
+    text: Una estructura de datos que almacena pares clave-valor.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 24
+  fields:
+    question: 8
+    text: Un tipo de variable que puede almacenar diferentes tipos de datos.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 5
+  fields:
+    name: Pruebas de software
+
+- model: quiz.question
+  pk: 9
+  fields:
+    quiz: 5
+    text: ¿Cuál es el propósito principal de las pruebas unitarias?
+
+- model: quiz.answer
+  pk: 25
+  fields:
+    question: 9
+    text: Probar la integración de diferentes componentes del sistema.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 26
+  fields:
+    question: 9
+    text: Verificar el rendimiento del sistema bajo carga.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 27
+  fields:
+    question: 9
+    text: Probar las unidades más pequeñas de código, como funciones o métodos individuales, de forma aislada.
+    is_correct: true
+
+- model: quiz.question
+  pk: 10
+  fields:
+    quiz: 5
+    text: ¿Qué son las pruebas de integración?
+
+- model: quiz.answer
+  pk: 28
+  fields:
+    question: 10
+    text: Pruebas que verifican el funcionamiento de un sistema completo en un entorno de producción.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 29
+  fields:
+    question: 10
+    text: Pruebas que evalúan la interacción entre diferentes componentes o módulos del sistema.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 30
+  fields:
+    question: 10
+    text: Pruebas que comprueban el rendimiento del sistema bajo carga.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 6
+  fields:
+    name: Control de versiones
+
+- model: quiz.question
+  pk: 11
+  fields:
+    quiz: 6
+    text: ¿Cuál es la principal ventaja de utilizar un sistema de control de versiones como Git?
+
+- model: quiz.answer
+  pk: 31
+  fields:
+    question: 11
+    text: Facilitar la colaboración en proyectos de software al permitir que múltiples desarrolladores trabajen en el mismo código fuente.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 32
+  fields:
+    question: 11
+    text: Aumentar la velocidad de ejecución de los programas.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 33
+  fields:
+    question: 11
+    text: Mejorar la legibilidad del código fuente.
+    is_correct: false
+
+- model: quiz.question
+  pk: 12
+  fields:
+    quiz: 6
+    text: ¿Qué es un merge en Git?
+
+- model: quiz.answer
+  pk: 34
+  fields:
+    question: 12
+    text: Una operación que combina los cambios de diferentes ramas en una sola rama.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 35
+  fields:
+    question: 12
+    text: Una herramienta para editar el código fuente.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 36
+  fields:
+    question: 12
+    text: Un comando para eliminar archivos del repositorio.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 7
+  fields:
+    name: Bases de datos
+
+- model: quiz.question
+  pk: 13
+  fields:
+    quiz: 7
+    text: ¿Cuál es la diferencia principal entre una base de datos relacional y una base de datos NoSQL?
+
+- model: quiz.answer
+  pk: 37
+  fields:
+    question: 13
+    text: Las bases de datos relacionales almacenan datos en tablas con filas y columnas, mientras que las bases de datos NoSQL almacenan datos en estructuras no relacionales como documentos, pares clave-valor, grafos o columnas de familia.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 38
+  fields:
+    question: 13
+    text: Las bases de datos NoSQL son más rápidas que las bases de datos relacionales.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 39
+  fields:
+    question: 13
+    text: Las bases de datos relacionales son más seguras que las bases de datos NoSQL.
+    is_correct: false
+
+- model: quiz.question
+  pk: 14
+  fields:
+    quiz: 7
+    text: ¿Qué es una transacción en una base de datos?
+
+- model: quiz.answer
+  pk: 40
+  fields:
+    question: 14
+    text: Una secuencia de operaciones que se ejecutan como una unidad lógica indivisible.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 41
+  fields:
+    question: 14
+    text: Un comando para eliminar datos de la base de datos.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 42
+  fields:
+    question: 14
+    text: Un tipo de consulta utilizada para recuperar datos de la base de datos.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 8
+  fields:
+    name: Arquitectura de software
+
+- model: quiz.question
+  pk: 15
+  fields:
+    quiz: 8
+    text: ¿Cuál es el propósito principal del patrón de arquitectura de software Modelo-Vista-Controlador (MVC)?
+
+- model: quiz.answer
+  pk: 43
+  fields:
+    question: 15
+    text: Separar la lógica de presentación de la lógica de negocio y facilitar el mantenimiento y la escalabilidad de la aplicación.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 44
+  fields:
+    question: 15
+    text: Mejorar el rendimiento de la aplicación.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 45
+  fields:
+    question: 15
+    text: Facilitar la creación de interfaces de usuario complejas.
+    is_correct: false
+
+- model: quiz.question
+  pk: 16
+  fields:
+    quiz: 8
+    text: ¿Qué es el principio de responsabilidad única (SRP) en el diseño de software?
+
+- model: quiz.answer
+  pk: 46
+  fields:
+    question: 16
+    text: Cada clase o módulo debe tener una única razón para cambiar.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 47
+  fields:
+    question: 16
+    text: Todas las clases y módulos deben tener múltiples responsabilidades.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 48
+  fields:
+    question: 16
+    text: Cada clase o módulo debe realizar una sola tarea específica.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 9
+  fields:
+    name: Seguridad y criptografía
+
+- model: quiz.question
+  pk: 17
+  fields:
+    quiz: 9
+    text: ¿Cuál es el propósito principal de la criptografía?
+
+- model: quiz.answer
+  pk: 49
+  fields:
+    question: 17
+    text: Proteger la confidencialidad, integridad y autenticidad de los datos.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 50
+  fields:
+    question: 17
+    text: Hacer que los datos sean más fáciles de leer.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 51
+  fields:
+    question: 17
+    text: Reducir el tamaño de los datos.
+    is_correct: false
+
+- model: quiz.question
+  pk: 18
+  fields:
+    quiz: 9
+    text: ¿Qué es un ataque de inyección SQL?
+
+- model: quiz.answer
+  pk: 52
+  fields:
+    question: 18
+    text: Un tipo de ataque informático en el que se inserta código SQL malicioso en una aplicación para acceder o manipular datos en una base de datos.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 53
+  fields:
+    question: 18
+    text: Un ataque que intenta sobrecargar un sistema con solicitudes excesivas.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 54
+  fields:
+    question: 18
+    text: Un ataque que intenta adivinar contraseñas mediante fuerza bruta.
+    is_correct: false
+
+- model: quiz.quiz
+  pk: 10
+  fields:
+    name: Redes y comunicaciones
+
+- model: quiz.question
+  pk: 19
+  fields:
+    quiz: 10
+    text: ¿Cuál es la diferencia principal entre TCP e IP en la suite de protocolos TCP/IP?
+
+- model: quiz.answer
+  pk: 55
+  fields:
+    question: 19
+    text: TCP es un protocolo de capa de transporte que proporciona un servicio de transmisión confiable, mientras que IP es un protocolo de capa de red que se encarga del enrutamiento y entrega de paquetes de datos a través de diferentes redes.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 56
+  fields:
+    question: 19
+    text: TCP es un protocolo de capa de red, mientras que IP es un protocolo de capa de transporte.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 57
+  fields:
+    question: 19
+    text: TCP e IP son protocolos de la misma capa y realizan la misma función.
+    is_correct: false
+
+- model: quiz.question
+  pk: 20
+  fields:
+    quiz: 10
+    text: ¿Qué es un ataque de denegación de servicio (DoS)?
+
+- model: quiz.answer
+  pk: 58
+  fields:
+    question: 20
+    text: Un ataque que intenta sobrecargar un sistema con solicitudes excesivas para impedir que los usuarios legítimos accedan a los servicios.
+    is_correct: true
+
+- model: quiz.answer
+  pk: 59
+  fields:
+    question: 20
+    text: Un ataque que intenta adivinar contraseñas mediante fuerza bruta.
+    is_correct: false
+
+- model: quiz.answer
+  pk: 60
+  fields:
+    question: 20
+    text: Un ataque que intenta acceder a datos confidenciales mediante la inyección de código malicioso.
+    is_correct: false
